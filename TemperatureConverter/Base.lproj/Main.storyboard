@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TemperatureConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="efZ-n6-TTa"/>
+                        <viewControllerLayoutGuide type="bottom" id="s82-Bc-Z0p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkl-Ss-8W0">
+                                <rect key="frame" x="16" y="128" width="80" height="21"/>
+                                <color key="backgroundColor" red="0.80082370920000001" green="0.80082370920000001" blue="0.80082370920000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="86F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1v-u9-Jc5">
+                                <rect key="frame" x="121" y="128" width="80" height="21"/>
+                                <color key="backgroundColor" red="0.80082370920000001" green="0.80082370920000001" blue="0.80082370920000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="303.15K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke2-Lb-caP">
+                                <rect key="frame" x="224" y="128" width="80" height="21"/>
+                                <color key="backgroundColor" red="0.80082370920000001" green="0.80082370920000001" blue="0.80082370920000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fVN-Tp-5BD">
+                                <rect key="frame" x="14" y="276" width="292" height="31"/>
+                                <connections>
+                                    <action selector="temperatureSliderChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="UOQ-cV-0Q1"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Steam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8Q-VV-6HF">
+                                <rect key="frame" x="251" y="345" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqj-TW-pFe">
+                                <rect key="frame" x="16" y="345" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huL-1M-WJY">
+                                <rect key="frame" x="16" y="40" width="568" height="20.5"/>
+                                <color key="backgroundColor" red="0.80082370920000001" green="0.80082370920000001" blue="0.80082370920000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="huL-1M-WJY" firstAttribute="top" secondItem="efZ-n6-TTa" secondAttribute="bottom" constant="20" id="2wy-uM-n47"/>
+                            <constraint firstItem="fVN-Tp-5BD" firstAttribute="top" secondItem="e1v-u9-Jc5" secondAttribute="bottom" constant="80" id="3fy-Qe-Tka"/>
+                            <constraint firstItem="Dkl-Ss-8W0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="4Ai-xg-27S"/>
+                            <constraint firstAttribute="trailing" secondItem="fVN-Tp-5BD" secondAttribute="trailing" constant="16" id="6SJ-MR-QKJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ke2-Lb-caP" secondAttribute="trailing" constant="16" id="9z4-Xw-LLs"/>
+                            <constraint firstItem="ke2-Lb-caP" firstAttribute="leading" secondItem="e1v-u9-Jc5" secondAttribute="trailing" constant="16" id="CF4-jn-pbH"/>
+                            <constraint firstItem="Dkl-Ss-8W0" firstAttribute="width" secondItem="e1v-u9-Jc5" secondAttribute="width" id="EY0-0Y-0NP"/>
+                            <constraint firstItem="huL-1M-WJY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Ig8-oO-d5j"/>
+                            <constraint firstItem="ke2-Lb-caP" firstAttribute="top" secondItem="huL-1M-WJY" secondAttribute="bottom" constant="80" id="NpQ-ha-9OL"/>
+                            <constraint firstAttribute="centerX" secondItem="huL-1M-WJY" secondAttribute="centerX" id="Yle-eN-dz2"/>
+                            <constraint firstItem="e1v-u9-Jc5" firstAttribute="top" secondItem="huL-1M-WJY" secondAttribute="bottom" constant="80" id="aci-Pc-gih"/>
+                            <constraint firstItem="fVN-Tp-5BD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="dSG-AZ-POo"/>
+                            <constraint firstItem="Dkl-Ss-8W0" firstAttribute="width" secondItem="ke2-Lb-caP" secondAttribute="width" id="fyq-xf-nfH"/>
+                            <constraint firstItem="e1v-u9-Jc5" firstAttribute="leading" secondItem="Dkl-Ss-8W0" secondAttribute="trailing" constant="16" id="h0e-ZV-Du7"/>
+                            <constraint firstItem="huL-1M-WJY" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="oqh-59-GDu"/>
+                            <constraint firstItem="Dkl-Ss-8W0" firstAttribute="top" secondItem="huL-1M-WJY" secondAttribute="bottom" constant="80" id="rGs-zM-eIb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Yle-eN-dz2"/>
+                                <exclude reference="4Ai-xg-27S"/>
+                                <exclude reference="EY0-0Y-0NP"/>
+                                <exclude reference="fyq-xf-nfH"/>
+                                <exclude reference="rGs-zM-eIb"/>
+                                <exclude reference="3fy-Qe-Tka"/>
+                                <exclude reference="6SJ-MR-QKJ"/>
+                                <exclude reference="dSG-AZ-POo"/>
+                                <exclude reference="aci-Pc-gih"/>
+                                <exclude reference="h0e-ZV-Du7"/>
+                                <exclude reference="9z4-Xw-LLs"/>
+                                <exclude reference="CF4-jn-pbH"/>
+                                <exclude reference="NpQ-ha-9OL"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Yle-eN-dz2"/>
+                                <include reference="4Ai-xg-27S"/>
+                                <include reference="EY0-0Y-0NP"/>
+                                <include reference="fyq-xf-nfH"/>
+                                <include reference="rGs-zM-eIb"/>
+                                <include reference="3fy-Qe-Tka"/>
+                                <include reference="6SJ-MR-QKJ"/>
+                                <include reference="dSG-AZ-POo"/>
+                                <include reference="aci-Pc-gih"/>
+                                <include reference="h0e-ZV-Du7"/>
+                                <include reference="9z4-Xw-LLs"/>
+                                <include reference="CF4-jn-pbH"/>
+                                <include reference="NpQ-ha-9OL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="Dkl-Ss-8W0" id="rNo-Qb-nsJ"/>
+                        <outlet property="fahrenheitLabel" destination="e1v-u9-Jc5" id="7e3-Cu-AMl"/>
+                        <outlet property="kelvinLabel" destination="ke2-Lb-caP" id="1zM-zx-tiY"/>
+                        <outlet property="temperatureSlider" destination="fVN-Tp-5BD" id="Q0q-5J-zD3"/>
+                        <outlet property="titleLabel" destination="huL-1M-WJY" id="icR-7f-AgU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378.75" y="336"/>
+        </scene>
+    </scenes>
+</document>
